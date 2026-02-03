@@ -31,6 +31,8 @@ public class Impresora {
         } else if (TIPO_COLOR.equals(tipo)) {
             exito = imprimirColor(hojas);
             precio = calcularPrecio(PRECIO_COLOR, hojas);
+        }else{
+            exito = false;
         }
 
         return exito
